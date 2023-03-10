@@ -18,18 +18,22 @@ public class Biblioteca {
         }
     }
 
+    try{
 
-    public int inputInt(String inputMessage) {
+      public int inputInt(String inputMessage) {
         Scanner sc = new Scanner(System.in);
         System.out.println(inputMessage);
         return sc.nextInt();
-    }
+       }
 
-    public String inputString(String inputMessage) {
+      public String inputString(String inputMessage) {
         Scanner sc = new Scanner(System.in);
         System.out.println(inputMessage);
         return sc.nextLine();
-    }
+       }
+    } 
+    
+    catch  (Exception e){}   // aggiungere condizione e eccezione 
 
 
 }
